@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>pi-websocket</title>
+    <link href="static/style.css" rel="stylesheet" type="text/css" />
+
+    <script src="static/client.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <h1>Controlling an Arduino through a Raspi with Websockets :)</h1>
+    <button class="submit" onclick="javascript:client.toggle_led()">Toggle LED</button>
+    <button class="submit" onclick="javascript:client.toggle_disco_party()">Disco Party</button><br />
+    
+    <input type="number" id="servo_val"/>
+    <button class="submit" onclick="javascript:client.move_servo()">Move Servo</button><br />
+    <input type="number" id="temp_val"/>
+    <button class="submit" onclick="javascript:client.change_temp()">Change Temp</button><br />
+    <input type="text" id="neo_val"/>
+    <button class="submit" onclick="javascript:client.toggle_neo()">NeoPixel</button><br />
+
+    
+
+    <script type="text/javascript">
+      // Connect a websocket to the server. The port notation is post-
+      // processed server-side according to the config
+    client.connect({{port}});
+    </script>
+  </body>
+</html>
