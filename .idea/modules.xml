@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/pi-websocket.iml" filepath="$PROJECT_DIR$/.idea/pi-websocket.iml" />
+      <module fileurl="file://$USER_HOME$/work-projects/pywebsocket-picontroller/.idea/pi-websocket.iml" filepath="$USER_HOME$/work-projects/pywebsocket-picontroller/.idea/pi-websocket.iml" />
     </modules>
   </component>
 </project>
